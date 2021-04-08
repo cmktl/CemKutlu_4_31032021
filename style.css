@@ -1,3 +1,19 @@
+/* ------------------------------------------------ */
+cite {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+h4 {
+	font-size: 22px;
+	font-weight: 200;
+}
+strong {
+	font-size: 25px;
+	color: #f3976c;
+}
+/* ------------------------------------------------ */
+
 body {
 	margin: 0;
 	padding: 0;
@@ -679,7 +695,7 @@ a {
 }
 
 p {
-	font-size: 11px;
+	font-size: 16px;
 }
 
 .tight-width-whitespace {
@@ -697,7 +713,7 @@ p {
 	color: #ffffff !important;
 	text-transform: uppercase;
 	padding: 12px 28px 12px 28px;
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 700;
 }
 
@@ -709,6 +725,7 @@ p {
 h2 {
 	font-size: 22px;
 	line-height: 1.4em;
+	text-align: center;
 }
 
 h3 {
