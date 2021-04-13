@@ -1,4 +1,11 @@
 /* ------------------------------------------------ */
+li > a {
+	color: #ffffff;
+}
+.footer-paragraph {
+	color: #ffffff;
+}
+
 cite {
 	font-size: 20px;
 	font-weight: 500;
@@ -13,12 +20,6 @@ strong {
 	color: #ffffff;
 }
 
-li > a {
-	color: #ffffff;
-}
-.footer-paragraph {
-	color: #ffffff;
-}
 /* ------------------------------------------------ */
 
 body {
