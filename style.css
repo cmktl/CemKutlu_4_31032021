@@ -10,7 +10,14 @@ h4 {
 }
 strong {
 	font-size: 25px;
-	color: #f3976c;
+	color: #ffffff;
+}
+
+li > a {
+	color: #ffffff;
+}
+.footer-paragraph {
+	color: #ffffff;
 }
 /* ------------------------------------------------ */
 
@@ -211,7 +218,7 @@ a:hover {
 
 .d-bloc .panel,
 .l-bloc {
-	color: rgba(0, 0, 0, 0.5);
+	color: rgba(0, 0, 0, 0.795);
 }
 
 .d-bloc .panel button:hover,
@@ -663,10 +670,8 @@ h3,
 h4,
 h5,
 h6,
-p,
 label,
-.btn,
-a {
+.btn {
 	font-family: 'helvetica';
 	font-weight: 400;
 	color: #575757 !important;
@@ -790,15 +795,15 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-	background-color: #f3976c;
+	background-color: #cd4b0e;
 }
 
 .tc-white {
-	color: #f3976c !important;
+	color: #ffffff !important;
 }
 
 .btn-atomic-tangerine {
-	background: #f3976c;
+	background: #cd4b0e;
 	color: #ffffff !important;
 }
 
@@ -816,7 +821,7 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-	color: #f3976c !important;
+	color: #cd4b0e !important;
 }
 
 .ltc-atomic-tangerine:hover {
