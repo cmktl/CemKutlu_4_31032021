@@ -43,20 +43,20 @@
 		</script>
 		<!-- Analytics END -->
 	</head>
+
 	<body>
-		<!-- Principal conteneur -->
-		<main class="page-container">
-			<!-- bloc-0 -->
-			<header class="bloc bgc-white l-bloc" id="bloc-0">
+		<main class="page-container" role="main">
+			<header class="bloc bgc-white l-bloc" id="bloc-0" role="banner">
 				<div class="container bloc-sm">
-					<nav class="navbar row">
+					<nav class="navbar row" role="navigation">
 						<div class="navbar-header">
-							<a class="navbar-brand" href="index.html"
+							<a class="navbar-brand" href="index.html" role="link"
 								><img
 									src="img/la-chouette-agence.png"
-									alt="Logo du agence web la chouette agence"
+									alt="Agence web la chouette agence"
 									height="40"
-							/></a>
+								/>
+							</a>
 							<button
 								id="nav-toggle"
 								type="button"
@@ -64,38 +64,37 @@
 								data-toggle="collapse"
 								data-target=".navbar-1"
 							>
-								<span class="sr-only">Toggle navigation</span
-								><span class="icon-bar"></span><span class="icon-bar"></span
-								><span class="icon-bar"></span>
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"> </span>
 							</button>
 						</div>
 						<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 							<ul class="site-navigation nav navbar-nav">
 								<li>
-									<a href="index.html">Accueil</a>
+									<a href="index.html" role="link">Accueil </a>
 								</li>
 								<li>
-									<a href="contact.html">Contact </a>
+									<a href="contact.html" role="link"> Contact </a>
 								</li>
 							</ul>
 						</div>
 					</nav>
 				</div>
 			</header>
-			<!-- bloc-0 END -->
-
-			<!-- bloc-6 -->
 			<section
 				class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper"
 				id="bloc-6"
+				role="region"
 			>
 				<div class="container bloc-lg">
 					<div class="row">
 						<div class="col-sm-12">
-							<h1 class="text-center hero-bloc-text tc-white">
+							<h1 class="text-center hero-bloc-text black">
 								Parlons web design !
 							</h1>
-							<p class="text-center mg-lg tc-white tight-width-whitespace">
+							<p class="text-center mg-lg black tight-width-whitespace">
 								Nous sommes ravis que vous souhaitiez collaborer avec notre
 								agence.<br />
 								Parlez-nous de votre projet en complétant le formulaire
@@ -105,56 +104,66 @@
 					</div>
 				</div>
 			</section>
-			<!-- bloc-6 END -->
-
-			<!-- bloc-7 -->
 			<div class="bloc bgc-white l-bloc" id="bloc-7">
 				<div class="container bloc-lg">
 					<div class="row">
 						<div class="col-sm-6">
 							<form
 								id="form_1"
-								novalidate
+								novalidate=""
 								success-msg="Your message has been sent."
 								fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
+								role="form"
 							>
 								<div class="form-group">
-									<label> Nom </label>
-									<input id="name" class="form-control" required />
+									<label for="nom"> Nom </label>
+									<input
+										id="nom"
+										class="form-control"
+										required=""
+										type="text"
+										aria-label="nom"
+									/>
 								</div>
 								<div class="form-group">
-									<label> Adresse email </label>
+									<label for="email"> Adresse email </label>
 									<input
 										id="email"
 										class="form-control"
 										type="email"
-										required
+										required=""
+										aria-label="email"
 									/>
 								</div>
 								<div class="form-group">
-									<label> Comment nous avez-vous connu ? </label>
+									<label for="question"> Comment nous avez-vous connu ? </label>
 									<input
 										class="form-control"
-										type="email"
-										required
-										id="input_504"
+										type="text"
+										required=""
+										id="question"
+										aria-label="question"
 									/>
 								</div>
 								<div class="form-group">
-									<label>
+									<label for="message">
 										Brief de votre projet (Ajoutez autant de détails que
-										nécessaire)<br /> </label
-									><textarea
+										nécessaire)<br />
+									</label>
+									<textarea
 										id="message"
 										class="form-control"
 										rows="4"
 										cols="50"
-										required
-									></textarea>
+										required=""
+										aria-label="message"
+									>
+									</textarea>
 								</div>
 								<button
 									class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
 									type="submit"
+									role="button"
 								>
 									Envoyer
 								</button>
@@ -169,49 +178,66 @@
 					</div>
 				</div>
 			</div>
-			<!-- bloc-7 END -->
-
-			<!-- ScrollToTop Button -->
-			<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"
-				><span class="fa fa-chevron-up"></span
-			></a>
-			<!-- ScrollToTop Button END-->
-
-			<!-- Footer - bloc-8 -->
-			<footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+			<a
+				class="bloc-button btn btn-d scrollToTop"
+				onclick="scrollToTarget('1')"
+				role="link"
+				><span class="fa fa-chevron-up"></span>
+			</a>
+			<footer
+				class="bloc bgc-atomic-tangerine d-bloc"
+				id="bloc-8"
+				role="contentinfo"
+			>
 				<div class="container bloc-sm">
 					<div class="row">
 						<div class="col-sm-12">
-							<p class="text-center white">
+							<p class="text-center black">
 								La chouette agence - Agence web basée à Lyon.<br />
 							</p>
 							<div class="row row-no-gutters social">
 								<div class="col-sm-3">
 									<div class="text-center">
-										<a class="social" href="index.html"
-											><span class="fa fa-twitter icon-md"></span
-										></a>
+										<a
+											class="social"
+											href="https://twitter.com/"
+											role="link"
+											aria-label="Trouvez nous sur Twitter"
+											><span class="fa fa-twitter icon-md"></span>
+										</a>
 									</div>
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
-										<a class="social" href="index.html"
-											><span class="fa fa-facebook icon-md"></span
-										></a>
+										<a
+											class="social"
+											href="https://www.facebook.com/"
+											role="link"
+											aria-label="Trouvez nous sur Facebook"
+											><span class="fa fa-facebook icon-md"></span>
+										</a>
 									</div>
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
-										<a class="social" href="index.html"
-											><span class="fa fa-dribbble icon-md"></span
-										></a>
+										<a
+											class="social"
+											href="https://dribbble.com/"
+											role="link"
+											aria-label="Trouvez nous sur Dribbble"
+											><span class="fa fa-dribbble icon-md"></span>
+										</a>
 									</div>
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
-										<a class="social" href="index.html"
-											><span class="fa fa-instagram icon-md"></span
-										></a>
+										<a
+											class="social"
+											href="https://www.instagram.com/"
+											role="link"
+											aria-label="Trouvez nous sur Instagram"
+											><span class="fa fa-instagram icon-md"></span>
+										</a>
 									</div>
 								</div>
 							</div>
@@ -219,13 +245,6 @@
 					</div>
 				</div>
 			</footer>
-			<!-- Footer - bloc-8 END -->
 		</main>
-		<!-- Principal conteneur END -->
-		<script src="./js/jquery-2.1.0.js"></script>
-		<script src="./js/bootstrap.js"></script>
-		<script src="./js/blocs.js"></script>
-		<script src="./js/jquery.touchSwipe.js" defer></script>
-		<script src="./js/gmaps.js"></script>
 	</body>
 </html>
