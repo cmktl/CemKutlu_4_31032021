@@ -47,7 +47,11 @@
 		<main class="page-container" role="main">
 			<header class="bloc bgc-white l-bloc" id="bloc-0" role="banner">
 				<div class="container bloc-sm">
-					<nav class="navbar row" role="navigation">
+					<nav
+						class="navbar row"
+						role="navigation"
+						aria-label="main navigation"
+					>
 						<div class="navbar-header">
 							<a class="navbar-brand" href="index.html" role="link"
 								><img
@@ -72,10 +76,14 @@
 						<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 							<ul class="site-navigation nav navbar-nav">
 								<li>
-									<a href="/index.html" role="link">Accueil </a>
+									<a href="/index.html" role="link" aria-label="menuitem"
+										>Accueil
+									</a>
 								</li>
 								<li>
-									<a href="/contact.html" role="link"> Contact </a>
+									<a href="/contact.html" role="link" aria-label="menuitem">
+										Contact
+									</a>
 								</li>
 							</ul>
 						</div>
@@ -387,5 +395,10 @@
 				</div>
 			</footer>
 		</main>
+		<script src="./js/jquery-2.1.0.js"></script>
+		<script src="./js/bootstrap.js"></script>
+		<script src="./js/blocs.js"></script>
+		<script src="./js/jquery.touchSwipe.js" defer></script>
+		<script src="./js/gmaps.js"></script>
 	</body>
 </html>
